@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cxu - Personal Page</title>
+  <style>
+    body {
+      background: linear-gradient(-45deg, #1a1a1a, #000000, #1a1a1a, #000000);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      cursor: url('https://cur.cursors-4u.net/others/oth-6/oth641.cur'), auto;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 3px solid red;
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px red;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 50px red;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 15px red;
+      animation: pulseText 2s infinite;
+      margin: 0;
+    }
+
+    @keyframes pulseText {
+      0% { text-shadow: 0 0 15px red; }
+      50% { text-shadow: 0 0 30px red; }
+      100% { text-shadow: 0 0 15px red; }
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: white;
+      margin-top: 10px;
+      animation: floatTagline 4s ease-in-out infinite;
+    }
+
+    @keyframes floatTagline {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img class="avatar" src="https://i.pinimg.com/736x/63/83/f2/6383f21fff2d2f4dd83f37ed56c3a249.jpg" alt="Avatar">
+  <h1>cxu</h1>
+  <div class="tagline">just cxu xd</div>
+</body>
+</html>
